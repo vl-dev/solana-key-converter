@@ -12,8 +12,8 @@ A CLI tool to convert Solana private keys between array format and base58 encode
 
 ```bash
 # Clone the repository
-git clone https://github.com/matusvla/solana-key-convertor.git
-cd solana-key-convertor
+git clone https://github.com/matusvla/solana-key-converter.git
+cd solana-key-converter
 
 # Run the installation script
 ./install.sh
@@ -90,15 +90,15 @@ skc --help
 ```bash
 # Array to base58 conversion
 skc "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64]"
-# Output: Converted from array to base58: 2VXgRCzAo7KsC5hKC5Dkco4qJxKgQNGZpQKgYgQdMJ7h
+# Output: Converted from array to base58: 2Ana1pUpv2ZbMVkwF5FXapYeBEjdxDatLn7nvJkhgTSXbs59SyZSx866bXirPgj8QQVB57uxHJBG1YFvkRbFj4T
 
 # Base58 to array conversion
-skc "2VXgRCzAo7KsC5hKC5Dkco4qJxKgQNGZpQKgYgQdMJ7h"
+skc "2Ana1pUpv2ZbMVkwF5FXapYeBEjdxDatLn7nvJkhgTSXbs59SyZSx866bXirPgj8QQVB57uxHJBG1YFvkRbFj4T"
 # Output: Converted from base58 to array: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64]
 
 # Works with or without brackets for arrays
 skc "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64"
-# Output: Converted from array to base58: 2VXgRCzAo7KsC5hKC5Dkco4qJxKgQNGZpQKgYgQdMJ7h
+# Output: Converted from array to base58: 2Ana1pUpv2ZbMVkwF5FXapYeBEjdxDatLn7nvJkhgTSXbs59SyZSx866bXirPgj8QQVB57uxHJBG1YFvkRbFj4T
 ```
 
 ### File Input Examples
@@ -111,12 +111,12 @@ If you have a file `array-key.txt` containing:
 ```bash
 # Convert from file (automatically detects array format)
 skc array-key.txt
-# Output: Converted from array to base58: 2VXgRCzAo7KsC5hKC5Dkco4qJxKgQNGZpQKgYgQdMJ7h
+# Output: Converted from array to base58: 2Ana1pUpv2ZbMVkwF5FXapYeBEjdxDatLn7nvJkhgTSXbs59SyZSx866bXirPgj8QQVB57uxHJBG1YFvkRbFj4T
 ```
 
 If you have a file `base58-key.txt` containing:
 ```
-2VXgRCzAo7KsC5hKC5Dkco4qJxKgQNGZpQKgYgQdMJ7h
+2Ana1pUpv2ZbMVkwF5FXapYeBEjdxDatLn7nvJkhgTSXbs59SyZSx866bXirPgj8QQVB57uxHJBG1YFvkRbFj4T
 ```
 
 ```bash
