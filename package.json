@@ -1,0 +1,31 @@
+{
+  "name": "skc",
+  "version": "1.0.0",
+  "description": "Solana Key Converter - CLI tool to convert between array format and base58 encoded Solana private keys",
+  "main": "dist/index.js",
+  "bin": {
+    "skc": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js",
+    "install-global": "npm run build && npm install -g .",
+    "test": "node dist/index.js --help"
+  },
+  "keywords": ["solana", "crypto", "base58", "cli", "converter"],
+  "author": "matusvla",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "bs58": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
